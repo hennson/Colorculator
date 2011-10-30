@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html manifest="cache.manifest">
+
+<head>
+<title>Colorculator</title>
+<meta name="application-name" content="COLORCULATOR">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="apple-touch-icon-precomposed" href="img/colorculator57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/colorculator114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/colorculator114.png" />
+</head>
+
+<body>
+<section id="container">
+	<header>
+		<h1>COLORCULATOR <i id="online" class="offline"><span class="line1"></span><span class="line2"></span><span class="line3"></span><span class="line4"></span></i> <span id="claim"><a href="http://usw-usf.de" target="_blank">by usw-usf.de</a></span></h1>
+	</header>
+	<ul id="output">
+		<li id="hex"><span class="label">hex</span><b>#</b><span id="value"></span></li>
+		<li id="rgb"><span class="label">rgb</span><span id="rgb-value"></span></li>
+		<li id="hsl"><span class="label">hsl</span><span id="hsl-value"></span></li>
+		<li id="preview">clear</li>
+	</ul>
+	<ul id="hexpad">
+		<li class="number">0</li>
+		<li class="number">1</li>
+		<li class="number">2</li>
+		<li class="number last">3</li>
+		<li class="number">4</li>
+		<li class="number">5</li>
+		<li class="number">6</li>
+		<li class="number last">7</li>
+		<li class="number">8</li>
+		<li class="number">9</li>
+		<li>a</li>
+		<li class="last">b</li>
+		<li>c</li>
+		<li>d</li>
+		<li>e</li>
+		<li class="last">f</li>
+	</ul>
+	<div id="pleasenote">
+		<em>Please bring me Home...</em>
+		<p>Use <strong>'Add to Home Screen'</strong> right there!</p>
+	</div>
+</section>
+
+<script src="jsc/jquery-1.6.4.js"></script>
+<script src="jsc/colorCalculations.js"></script>
+<script src="jsc/jquery.application.js"></script>
+
+</body>
+
+</html>

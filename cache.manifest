@@ -1,0 +1,16 @@
+CACHE MANIFEST
+
+# Offline cache v1
+# html
+colorculator.html
+
+# css files
+css/styles.min.css
+
+# js files
+jsc/jquery-1.6.4.js
+jsc/jquery.application.js
+jsc/colorCalculations.js
+
+NETWORK:
+jsc/network.js
