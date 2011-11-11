@@ -1,6 +1,6 @@
 /*
-* Version: 00.01
-* Date: 29.10.2011
+* Version: 00.02
+* Date: 10.11.2011
 * By: usw-usf.de
 */
 
@@ -96,13 +96,10 @@ $(function () {
     };
 
     // bind the clear functionality to our button
-    $("#preview").bind(_clickEventType, function () {
-        clear();
-    });
+    $("#preview").bind(_clickEventType, clear);
 
-    // bind the network status check
-    $(document.body).bind("online", checkNetworkStatus);
-    $(document.body).bind("offline", checkNetworkStatus);
+    // bind the network status check and call it
+    $(document.body).bind("online offline", checkNetworkStatus);
     checkNetworkStatus();
 
 });
